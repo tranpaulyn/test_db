@@ -4,7 +4,7 @@ exports.up = function(knex, Promise) {
         table.increments();
         table.string('description');
         table.date('date_achieved');
-        table.foreign('famous_person_id').refrences('famous_people.id');
+        // table.foreign('famous_person_id').refrences('famous_people.id');
         table.timestamps();
       })
     ])
