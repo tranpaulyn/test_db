@@ -25,6 +25,7 @@ client.connect((err) => {
     let count = 0;
     let birthday = '';
     let realBirthday = '';
+    // console.log(result.rows)
     console.log(`Found ${result.rowCount} person(s) by the name '${name}'`)
     result.rows.forEach(person => {
         if (person.first_name === name) {
